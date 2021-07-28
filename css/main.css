@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+.image-header{
+    background-color: hsl(305, 100%, 49%);
+    border-radius: 8px 8px 0 0;
+    margin: 0.3em 1em 0;
+}
+img{
+    height: auto;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    opacity: 0.5;
+}
+
+.bottom{
+    background-color: hsl(244, 38%, 16%);
+    margin: -0.3em 1em 5em;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.bottom header{
+    font-size: 2.5rem;
+    display: block;
+    padding: 1em .6em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.bottom header span{
+    color: hsl(290, 100%, 49%);
+}
+
+p{
+    padding: 0 3.5em;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: .15em;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 0.1em;
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+.companies{
+    margin: 3em;
+}
+
+
+.templates{
+    margin: 3em;
+}
+
+
+.queries{
+    margin: 3em;
+}
+
+@media (min-width: 1440px){
+
+
+    body{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "write image";
+        margin-top: 3em;
+    }
+
+    .image-header{
+        grid-area: image;
+        margin: 5em 5em 5em 0;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .main-page{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bottom{
+        grid-area: write;
+        margin: 5em 0 5em 5em;
+        border-radius: 8px 0 0 8px;
+        margin-bottom: 5.3em;
+        
+    }
+
+    img{
+        background: url(/images/image-header-desktop.jpg) ;
+    }
+
+    .first-upper header{
+        padding: 2em 2.3em .5em 2em;
+        margin-bottom: -0.5em;
+    }
+
+    .first-upper p{
+        padding: 2em 7em .5em 5.2em;
+    }
+
+    .second-bottom{
+        padding-left: 2em ;
+        margin: -2em 0 -3.5em;
+        display: grid;
+        grid-template-columns: repeat(3,33.33%);
+        grid-template-areas: "companies templates queries";
+    }
+
+    .companies{
+        grid-area: companies;
+    }
+
+    .templates{
+        grid-area: templates;
+    }
+
+    .queries{
+        grid-area: queries;
+    }
+
+    .second-bottom p{
+        padding-left: 0;
+    }
+}
+
